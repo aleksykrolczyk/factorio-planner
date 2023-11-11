@@ -7,7 +7,6 @@ let plan = planner.plan()
 plan.summary()
 
 print("\nBasic ingredients:")
-let basicIngredients = plan.basicIngredients
-for (ingredient, amount) in basicIngredients {
-  print("\(ingredient.name): \(amount)/s")
+for (ingredient, amount) in plan.basicIngredients {
+  print("  \(ingredient.name): \(amount)/s")
 }
