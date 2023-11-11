@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:factorio-planner}",
+            "name": "Debug factorio-planner",
+            "program": "${workspaceFolder:factorio-planner}/.build/debug/factorio-planner",
+            "preLaunchTask": "swift: Build Debug factorio-planner"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:factorio-planner}",
+            "name": "Release factorio-planner",
+            "program": "${workspaceFolder:factorio-planner}/.build/release/factorio-planner",
+            "preLaunchTask": "swift: Build Release factorio-planner"
+        },
+    ]
+}
