@@ -68,7 +68,7 @@ extension Planner {
       } else {
 
         let subIngredientPerSecond =
-          Float(subIngredient.outputAmount) * subIngredient.craftingTime.using(assembler: assembler)
+          Float(subIngredient.outputAmount) / subIngredient.craftingTime.using(assembler: assembler)
         let assemblersForIngredient = requiredSubIngredientPerSecond / subIngredientPerSecond
         let subIngredients = plan(ingredient: subIngredient, assemblersCount: assemblersForIngredient, depth: depth + 1)
         subItems.append(
